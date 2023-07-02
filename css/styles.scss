@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background-color: cornflowerblue;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+.box1 {
+  position: absolute;
+  top: -100%;
+  left: -50%;
+  width: 400px;
+  height: 400px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.box2 {
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 200px;
+  background-color: rgb(255, 0, 221);
+}
+
+.text {
+  outline: 1px solid salmon;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+
+  color: aquamarine;
+  font-size: 24px;
+  font-weight: 600;
+  mix-blend-mode: difference;
+}
+
+.grab {
+  cursor: grab;
+}
+
+.dragging {
+  cursor: grabbing;
+}
